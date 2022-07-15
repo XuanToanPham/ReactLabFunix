@@ -1,7 +1,8 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, NavbarBrand } from "react-bootstrap";
+import { Container, Navbar, NavbarBrand } from "react-bootstrap";
+import MenuComponent from "./Components/MenuComponent";
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,10 @@ function App() {
           <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
         </div>
       </Navbar>
+
+      <Container>
+        <MenuComponent/>
+      </Container>
     </div>
   );
 }
