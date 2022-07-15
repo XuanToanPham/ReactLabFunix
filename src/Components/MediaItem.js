@@ -9,7 +9,7 @@ const MediaItem = (props) => {
         alt="Generic placeholder"
       />
       <div className="media-body">
-        <h5 className="mt-0">{dish.name}</h5>
+        <h2 className="mt-0">{dish.name}</h2>
         <p>{dish.description}</p>
       </div>
     </div>
