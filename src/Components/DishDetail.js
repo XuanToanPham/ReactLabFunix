@@ -1,15 +1,17 @@
 
 import { COMMENTS } from "../Data/Comment";
+import { data } from "../Data/Data";
 import Comment from "./Comment";
-const DishDetail = (props) => {
-  const dish = props.data;
-  const idComment = dish.id;
-  console.log(idComment)
+import {useLocation, useParams} from "react-router-dom"
+const DishDetail = () => {
+  const params = useParams();
+  const location = useLocation()
+  const dish = data.find(dish => dish.id === +params.dishID);
+  const idComment = +params.dishID;
   const listComment = COMMENTS.filter(
     (comment) => comment.dishId === idComment
   );
-
-  console.log(listComment   )
+  console.log(listComment)
   
   return (
     <div className="row mt-5">
