@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './UI.css'
 const Footer = () => {
   return (
@@ -36,44 +36,44 @@ const Footer = () => {
               <i className="fa fa-fax fa-lg"></i>: +852 8765 4321
               <br />
               <i className="fa fa-envelope fa-lg"></i>:{" "}
-              <a href="mailto:confusion@food.net">confusion@food.net</a>
+              <Link to="mailto:confusion@food.net">confusion@food.net</Link>
             </address>
           </div>
           <div className="col-12 col-sm-4 align-self-center">
             <div className="text-center">
-              <a
+              <Link
                 className="btn btn-social-icon btn-google"
-                href="http://google.com/+"
+                to="http://google.com/+"
               >
                 <i className="fa fa-google-plus"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/profile.php?id="
+                to="http://www.facebook.com/profile.php?id="
               >
                 <i className="fa fa-facebook"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-social-icon btn-linkedin"
-                href="http://www.linkedin.com/in/"
+                to="http://www.linkedin.com/in/"
               >
                 <i className="fa fa-linkedin"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
+                to="http://twitter.com/"
               >
                 <i className="fa fa-twitter"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
+                to="http://youtube.com/"
               >
                 <i className="fa fa-youtube"></i>
-              </a>
-              <a className="btn btn-social-icon" href="mailto:">
+              </Link>
+              <Link className="btn btn-social-icon" to="mailto:">
                 <i className="fa fa-envelope-o"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,7 @@
+.error input{
+    border-color: rgb(224, 117, 117);
+}
+
+.error small{
+    color: rgb(224, 117, 117);
+}

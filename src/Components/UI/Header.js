@@ -5,11 +5,12 @@ import {
   Navbar,
   Jumbotron,
   Nav,
-  NavItem
+  NavItem,
+  Button
 } from "react-bootstrap";
 import {NavLink} from "react-router-dom"
 import "./UI.css";
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <Navbar expand="lg" className="navbar-dark">
@@ -40,6 +41,7 @@ const Header = () => {
               </NavItem>
             </Nav>
           </Navbar.Collapse>
+          <Button onClick={props.onShow}>Login</Button>
         </Container>
       </Navbar>
       <Jumbotron>

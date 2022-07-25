@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Breadcrumb} from "react-bootstrap"
+import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
+import FormContact from "../UI/FormController";
 function Contact(props) {
   return (
     <div className="container">
       <Breadcrumb>
-        <Breadcrumb.Item>
-          <Link to="/home">Home</Link>
-        </Breadcrumb.Item>
+        <BreadcrumbItem>
+          <Link to={`/home`}>Home </Link>
+        </BreadcrumbItem>
         <Breadcrumb.Item active>Contact</Breadcrumb.Item>
       </Breadcrumb>
       <div className="row row-content">
@@ -43,7 +44,7 @@ function Contact(props) {
             >
               <i className="fa fa-phone"></i> Call
             </Link>
-            <Link role="button" className="btn btn-info">
+            <Link to={"skype"} role="button" className="btn btn-info">
               <i className="fa fa-skype"></i> Skype
             </Link>
             <Link
@@ -56,6 +57,7 @@ function Contact(props) {
           </div>
         </div>
       </div>
+      <FormContact />
     </div>
   );
 }
